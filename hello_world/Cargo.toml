@@ -1,0 +1,17 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+helix-term = { path = "../../helix/helix-term" }
+helix-event = { path = "../../helix/helix-event" }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.9.2"
+
+[lib]
+name = "hello_world"
+crate-type = ["dylib"]
+
+[profile.release]
+lto = true

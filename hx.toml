@@ -1,0 +1,16 @@
+[hello_world]
+name = "Hello World"
+description = "A very simple plugin"
+version = "0.1.0"
+# build_command = "cargo build --release --manifest-path=hello_world/Cargo.toml"
+# lib_source = "hello_world/target/release/libhello_world.so"
+build_command = "cargo build --manifest-path=hello_world/Cargo.toml"
+lib_source = "hello_world/target/debug/libhello_world.so"
+
+[parrot]
+name = "Parrot"
+version = "0.1.0"
+# build_command = "cargo build --release --manifest-path=parrot/Cargo.toml"
+# lib_source = "parrot/target/release/libparrot.so"
+build_command = "cargo build --manifest-path=parrot/Cargo.toml"
+lib_source = "hello_world/target/debug/libhello_world.so"
